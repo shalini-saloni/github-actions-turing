@@ -8,5 +8,8 @@ jobs:
       - name: Print Hello World
         run: echo "Hello World"
 
+      - name: Repo Clone 
+        uses: actions/checkout@v4
+        
       - name: Add numbers
         run: node server.js
