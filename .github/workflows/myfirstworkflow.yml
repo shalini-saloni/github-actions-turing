@@ -1,9 +1,9 @@
-name: Print Hello World
+name: Run my first workflow
 on: 
   push:
 jobs:
   print:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Hello World
-        run: echo "Hello World"
+      - name: Run a one-line script
+        run: node server.js
