@@ -5,7 +5,8 @@ jobs:
   print:
     runs-on: ubuntu-latest
     defaults:
-      working-directory: backend
+      run:
+        working-directory: backend
     steps:
       - name: Print Hello World
         run: echo "Hello World"
@@ -20,7 +21,7 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-        
+
       - name: Run tests
         run: npm test
 
