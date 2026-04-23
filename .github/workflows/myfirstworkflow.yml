@@ -1,20 +1,12 @@
-name: Run my first workflow
+name: My First Workflow
 on: 
   push:
 jobs:
   print:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository code
-        uses: actions/checkout@v3
+      - name: Print Hello World
+        run: echo "Hello World"
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run a one-line script
-        run: node server.js 
+      - name: Add numbers
+        run: node server.js

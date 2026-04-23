@@ -1,3 +1,4 @@
-export default function handler(req,res){
-    res.status(200).json({ message: "Hello from the API!" });
+const sum = (a,b) => {
+    return a + b;
 }
+console.log(sum(4,5));
